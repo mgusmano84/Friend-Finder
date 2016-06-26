@@ -15,6 +15,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.text());
 app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
+//sets up external routes
+app.use(express.static(path.join(__dirname, 'app', 'public')));
+
 
 
 app.listen(PORT, function(){
