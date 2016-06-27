@@ -4,6 +4,20 @@
 	background-color: yellow
 }
 
+.jum {
+	background-color: lightgreen;
+}
+
+.nav2 {
+	background-color: lightgreen;
+}
+
+.font2 {
+	font-size: 30px;
+	color: black;
+}
+
+
 
 /*survey.html*/
 #head1 {font-size: 60px;
@@ -14,12 +28,17 @@
 
 }
 
+.cont2 {
+	background-image: url("../images/mii.JPG");
+
+}
+
 .back1 {
 	background-color: lightgreen;
 }
 
 .back2 {
-	background-color: lightblue;
+	background-color: lightgreen;
 }
 
 
