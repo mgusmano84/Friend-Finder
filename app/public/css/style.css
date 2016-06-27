@@ -1,5 +1,25 @@
+/*home.html*/
+
 .bar {
 	background-color: yellow
+}
+
+
+/*survey.html*/
+#head1 {font-size: 60px;
+
+}
+
+#head2 {font-size: 40px;
+
+}
+
+.back1 {
+	background-color: lightgreen;
+}
+
+.back2 {
+	background-color: lightblue;
 }
 
 
