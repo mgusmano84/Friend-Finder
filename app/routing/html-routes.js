@@ -6,18 +6,19 @@ var path = require('path');
 module.exports = function(app){
 
 	
-	// Basic route that sends the user first to the AJAX Page
-	app.get('/', function(req, res){
-		
-		//res.send("Welcome to the Star Wars Page!")
-		res.sendFile(path.join(__dirname, '..', 'public', 'home.html'));
-	})
 
+
+	//This will get you to the survey page
 	app.get('/survey', function(req, res){
 		
-		//res.send("Welcome to the Star Wars Page!")
+		
 		res.sendFile(path.join(__dirname, '..', 'public', 'survey.html'));
 	})
+
+	// default page
+	app.use(function(req, res) {
+		res.sendFile(path.join(__dirname, '..', 'public', 'home.html'));
+	});
 
 
 };
