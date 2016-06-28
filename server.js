@@ -6,10 +6,12 @@ var path = require('path');
 
 // Sets up the Express App
 // =============================================================
+
 var app = express();
 var PORT = process.env.PORT || 3000;
 
-
+require('./app/routing/html-routes.js')(app);
+// require('./app/routing/api-routes.js')(app);
 
 // Sets up the Express app to handle data parsing 
 app.use(bodyParser.json());
@@ -20,11 +22,6 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
 //sets up external routes
 app.use(express.static(path.join(__dirname, 'app', 'public')));
-
-require('./app/routing/html-routes.js')(app);
-// require('./app/routing/api-routes.js')(app);
-
-
 
 
 
