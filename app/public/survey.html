@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<!-- My Styles CSS -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Select 2 -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -52,189 +54,164 @@
 
 		<!-- *********************Questions********************** -->
 
-		<!-- Question #1 -->
-		<h4><span>Question #1</span></h4>
-		<h5>Go</h5>
-		<div class="dropdown">
-  			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    		Action
-    		<span class="caret"></span>
-  			</button>
-  			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    			<li><a href="#">Action</a></li>
-    			<li><a href="#">Another action</a></li>
-    			<li><a href="#">Something else here</a></li>
-    			<li role="separator" class="divider"></li>
-    			<li><a href="#">Separated link</a></li>
-  				</ul>
+
+		<div id="questions" class="contianer">
+			<!--Question 1-->
+			<div class="container">
+				<h4><span>Question #1</span></h4>
+				<h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
+				<select class="questions" id="q1">
+		            <option value=""></option>
+		            <option value="1">1 (Strongly Disagree)</option>
+		            <option value="2">2</option>
+		            <option value="3">3</option>
+		            <option value="4">4</option>
+		            <option value="5">5 (Strongly Agree)</option>
+	        	</select>
+			</div>
+
+			<!--Question 2-->
+			<div class="container">
+				<h4><span>Question #2</span></h4>
+				<h5>Generally speaking, you rely more on your experience than your imagination.</h5>
+				<select class="questions" id="q2">
+		            <option value=""></option>
+		            <option value="1">1 (Strongly Disagree)</option>
+		            <option value="2">2</option>
+		            <option value="3">3</option>
+		            <option value="4">4</option>
+		            <option value="5">5 (Strongly Agree)</option>
+	        	</select>
+			</div>
+
+			<!--Question 3-->
+			<div class="container">
+				<h4><span>Question #3</span></h4>
+				<h5>You find it easy to stay relaxed and focused even when there is some pressure.</h5>
+				<select class="questions" id="q3">
+		            <option value=""></option>
+		            <option value="1">1 (Strongly Disagree)</option>
+		            <option value="2">2</option>
+		            <option value="3">3</option>
+		            <option value="4">4</option>
+		            <option value="5">5 (Strongly Agree)</option>
+	        	</select>
+			</div>
+
+			<!--Question 4-->
+			<div class="container">
+				<h4><span>Question #4</span></h4>
+				<h5>You rarely do something just out of sheer curiosity..</h5>
+				<select class="questions" id="q4">
+		            <option value=""></option>
+		            <option value="1">1 (Strongly Disagree)</option>
+		            <option value="2">2</option>
+		            <option value="3">3</option>
+		            <option value="4">4</option>
+		            <option value="5">5 (Strongly Agree)</option>
+	        	</select>
+			</div>
+
+			<!--Question 5-->
+			<div class="container">
+				<h4><span>Question #5</span></h4>
+				<h5>People can rarely upset you.</h5>
+				<select class="questions" id="q5">
+		            <option value=""></option>
+		            <option value="1">1 (Strongly Disagree)</option>
+		            <option value="2">2</option>
+		            <option value="3">3</option>
+		            <option value="4">4</option>
+		            <option value="5">5 (Strongly Agree)</option>
+	        	</select>
+			</div>
+
+			<!--Question 6-->
+			<div class="container">
+				<h4><span>Question #6</span></h4>
+				<h5>It is often difficult for you to relate to other people’s feelings.</h5>
+				<select class="questions" id="q6">
+		            <option value=""></option>
+		            <option value="1">1 (Strongly Disagree)</option>
+		            <option value="2">2</option>
+		            <option value="3">3</option>
+		            <option value="4">4</option>
+		            <option value="5">5 (Strongly Agree)</option>
+	        	</select>
+			</div>
+
+			<!--Question 7-->
+			<div class="container">
+				<h4><span>Question #7</span></h4>
+				<h5>In a discussion, truth should be more important than people’s sensitivities.</h5>
+				<select class="questions" id="q7">
+		            <option value=""></option>
+		            <option value="1">1 (Strongly Disagree)</option>
+		            <option value="2">2</option>
+		            <option value="3">3</option>
+		            <option value="4">4</option>
+		            <option value="5">5 (Strongly Agree)</option>
+	        	</select>
+			</div>
+
+			<!--Question 8-->
+			<div class="container">
+				<h4><span>Question #8</span></h4>
+				<h5>You rarely get carried away by fantasies and ideas.</h5>
+				<select class="questions" id="q8">
+		            <option value=""></option>
+		            <option value="1">1 (Strongly Disagree)</option>
+		            <option value="2">2</option>
+		            <option value="3">3</option>
+		            <option value="4">4</option>
+		            <option value="5">5 (Strongly Agree)</option>
+	        	</select>
+			</div>
+
+			<!--Question 9-->
+			<div class="container">
+				<h4><span>Question #9</span></h4>
+				<h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h5>
+				<select class="questions" id="q9">
+		            <option value=""></option>
+		            <option value="1">1 (Strongly Disagree)</option>
+		            <option value="2">2</option>
+		            <option value="3">3</option>
+		            <option value="4">4</option>
+		            <option value="5">5 (Strongly Agree)</option>
+	        	</select>
+			</div>
+
+			<!--Question 10-->
+			<div class="container">
+				<h4><span>Question #1</span></h4>
+				<h5>You feel more energetic after spending time with a group of people.</h5>
+				<select class="questions" id="q10">
+		            <option value=""></option>
+		            <option value="1">1 (Strongly Disagree)</option>
+		            <option value="2">2</option>
+		            <option value="3">3</option>
+		            <option value="4">4</option>
+		            <option value="5">5 (Strongly Agree)</option>
+	        	</select>
+			</div>
 		</div>
 
-		<!-- Question #2 -->
-		<h4><span>Question #2</span></h4>
-		<h5>Go</h5>
-		<div class="dropdown">
-  			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    		Action
-    		<span class="caret"></span>
-  			</button>
-  			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    			<li><a href="#">Action</a></li>
-    			<li><a href="#">Another action</a></li>
-    			<li><a href="#">Something else here</a></li>
-    			<li role="separator" class="divider"></li>
-    			<li><a href="#">Separated link</a></li>
-  				</ul>
-		</div>
 
-		<!-- Question #3 -->
-		<h4><span>Question #3</span></h4>
-		<h5>Go</h5>
-		<div class="dropdown">
-  			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    		Action
-    		<span class="caret"></span>
-  			</button>
-  			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    			<li><a href="#">Action</a></li>
-    			<li><a href="#">Another action</a></li>
-    			<li><a href="#">Something else here</a></li>
-    			<li role="separator" class="divider"></li>
-    			<li><a href="#">Separated link</a></li>
-  				</ul>
-		</div>
-
-		<!-- Question #4 -->
-		<h4><span>Question #4</span></h4>
-		<h5>Go</h5>
-		<div class="dropdown">
-  			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    		Action
-    		<span class="caret"></span>
-  			</button>
-  			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    			<li><a href="#">Action</a></li>
-    			<li><a href="#">Another action</a></li>
-    			<li><a href="#">Something else here</a></li>
-    			<li role="separator" class="divider"></li>
-    			<li><a href="#">Separated link</a></li>
-  				</ul>
-		</div>
-
-		<!-- Question #5 -->
-		<h4><span>Question #5</span></h4>
-		<h5>Go</h5>
-		<div class="dropdown">
-  			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    		Action
-    		<span class="caret"></span>
-  			</button>
-  			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    			<li><a href="#">Action</a></li>
-    			<li><a href="#">Another action</a></li>
-    			<li><a href="#">Something else here</a></li>
-    			<li role="separator" class="divider"></li>
-    			<li><a href="#">Separated link</a></li>
-  				</ul>
-		</div>
-		
-		<!-- Question #6 -->
-		<h4><span>Question #6</span></h4>
-		<h5>Go</h5>
-		<div class="dropdown">
-  			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    		Action
-    		<span class="caret"></span>
-  			</button>
-  			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    			<li><a href="#">Action</a></li>
-    			<li><a href="#">Another action</a></li>
-    			<li><a href="#">Something else here</a></li>
-    			<li role="separator" class="divider"></li>
-    			<li><a href="#">Separated link</a></li>
-  				</ul>
-		</div>
-
-		<!-- Question #7 -->
-		<h4><span>Question #7</span></h4>
-		<h5>Go</h5>
-		<div class="dropdown">
-  			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    		Action
-    		<span class="caret"></span>
-  			</button>
-  			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    			<li><a href="#">Action</a></li>
-    			<li><a href="#">Another action</a></li>
-    			<li><a href="#">Something else here</a></li>
-    			<li role="separator" class="divider"></li>
-    			<li><a href="#">Separated link</a></li>
-  				</ul>
-		</div>
-
-		<!-- Question #8 -->
-		<h4><span>Question #8</span></h4>
-		<h5>Go</h5>
-		<div class="dropdown">
-  			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    		Action
-    		<span class="caret"></span>
-  			</button>
-  			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    			<li><a href="#">Action</a></li>
-    			<li><a href="#">Another action</a></li>
-    			<li><a href="#">Something else here</a></li>
-    			<li role="separator" class="divider"></li>
-    			<li><a href="#">Separated link</a></li>
-  				</ul>
-		</div>
-		
-		<!-- Question #9 -->
-		<h4><span>Question #9</span></h4>
-		<h5>Go</h5>
-		<div class="dropdown">
-  			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    		Action
-    		<span class="caret"></span>
-  			</button>
-  			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    			<li><a href="#">Action</a></li>
-    			<li><a href="#">Another action</a></li>
-    			<li><a href="#">Something else here</a></li>
-    			<li role="separator" class="divider"></li>
-    			<li><a href="#">Separated link</a></li>
-  				</ul>
-		</div>
-
-		<!-- Question #10 -->
-		<h4><span>Question #10</span></h4>
-		<h5>Go</h5>
-		<div class="dropdown">
-  			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    		Action
-    		<span class="caret"></span>
-  			</button>
-  			<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    			<li><a href="#">Action</a></li>
-    			<li><a href="#">Another action</a></li>
-    			<li><a href="#">Something else here</a></li>
-    			<li role="separator" class="divider"></li>
-    			<li><a href="#">Separated link</a></li>
-  				</ul>
-		</div>
 		<br>
 		<button type="button" class="btn btn-success col-md-12 butt2">SUBMIT!!!</button>
 		
-
-
-
-
-
-
-
-	
 	</div>
+
+
+
 
 </body>
 </html>
 
+<!--Jquery-->
+<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+<!-- Select 2 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+<!-- js for survey -->
 <script type="text/javascript" src='app.js'></script>
