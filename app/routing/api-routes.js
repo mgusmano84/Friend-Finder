@@ -10,13 +10,15 @@ module.exports = function(app) {
 
 
 	app.get('/api/friends', function(req, res) {
-		res.json(JSON.stringify(friendsData));
+		res.json((friendsData));
 	});
 
 	
 	
-	// app.post('api/friends', function(req, res) {
+	app.post('api/friends', function(req, res) {
 		
-	// });
+	});
 
 }
+
+
