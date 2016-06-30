@@ -4,14 +4,6 @@ $(document).ready(function() {
 	placeholder: "Select an Option"
 	})
 	
-	
-
-	// var user = {};
-	// var userScore = [];
-
-	// var y = 0;
-	// var matchName;
- //  	var matchImage;
 
 
 	$('.butt2').on('click', function(){
@@ -20,9 +12,10 @@ $(document).ready(function() {
       		name: $('#name').val().trim(),
       		photo: $('#image').val().trim(),
 			scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
-		};
+		}
 		console.log(newFriendData)
     
+
 
     $.post("/api/friends", newFriendData,
 	    function(){
@@ -31,10 +24,56 @@ $(document).ready(function() {
 	        $('#name').val("");
 			$('#image').val("");
 		});
+	
+
+	var currentURL = window.location.origin;
+
+	var resultArray = []
+
+	var matchName;
+    var matchImage;
+
+    // $.get(currentURL + "/api/friends", function(friendData){
+        
+    //     for (var i = 0; i < friendData.length; i++) {
+    //         compareMatches(newFriendData.result, friendData[i].result);
+    //      }
+
+    //          if (resultArray.length == friendData.length) {
+    //         var indexOfMatch = resultArray.indexOf(Math.min.apply(Math, resultArray));
+    //         matchName = friendData[indexOfMatch].name;
+    //         matchImage = friendData[indexOfMatch].image;
+    //         displayModal();
+    //       }
+    // })
+
+    // function compareMatches(friendData, newFriendData) {
+    // y= 0
+    // y++;
+    // var resultArray = [];
+    // console.log("==== Friend " + y + " results ====" )
+    // for (i = 1; i <= 10; i++){
+    // 	var compare = Math.abs(friendData[i] - newFriendData[i]); 
+     
+    //   resultArray.push(compare);
+    // }
+
+    // }
+
+      //     //Display modal with information on match.
+      // function modalMain() {
+      //   // $("#user-name").text(newFriendData.name);
+      //   $("#match-name").text(matchName);
+      //   $("#match-img").attr("src", matchImage);
+      //   $("#myModal").modal();
+      // }
 
 
 
 	});
+
+
+
 
 
 });
