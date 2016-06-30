@@ -33,6 +33,7 @@ $(document).ready(function() {
 	var matchName;
     var matchImage;
 
+    // ****************************************************************
     // $.get(currentURL + "/api/friends", function(friendData){
         
     //     for (var i = 0; i < friendData.length; i++) {
