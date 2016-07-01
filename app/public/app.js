@@ -34,11 +34,17 @@ $(document).ready(function() {
     var matchImage;
 
     // ****************************************************************
-    // $.get(currentURL + "/api/friends", function(friendData){
+   
+    $.get(currentURL + "/api/friends", function(friendData){
         
-    //     for (var i = 0; i < friendData.length; i++) {
-    //         compareMatches(newFriendData.result, friendData[i].result);
-    //      }
+        for (var i = 0; i < friendData.length; i++) {
+          console.log(friendData[2].name);
+          var matchName=friendData[2].name;
+          var matchImage=friendData[2].photo;
+          $("#match-name").text(matchName);
+          $("#match-img").attr("src", matchImage);
+        }
+      })
 
     //          if (resultArray.length == friendData.length) {
     //         var indexOfMatch = resultArray.indexOf(Math.min.apply(Math, resultArray));
@@ -61,18 +67,17 @@ $(document).ready(function() {
 
     // }
 
-      //     //Display modal with information on match.
+          //Display modal with information on match.
       // function modalMain() {
       //   // $("#user-name").text(newFriendData.name);
-      //   $("#match-name").text(matchName);
-      //   $("#match-img").attr("src", matchImage);
-      //   $("#myModal").modal();
+        
+      //   // $("#match-img").attr("src", matchImage);
+      //   $("#myModal").modal('show');
       // }
 
-
+// **************************************************
 
 	});
-
 
 
 
